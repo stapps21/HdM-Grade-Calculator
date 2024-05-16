@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "HdM - Grade Calculator",
+    "version": "1.0",
+    "description": "Enhances the HdM-Grade-Table by calculating and displaying average grades and ECTS for Grundstudium and Hauptstudium, and the final grade.",
+    "permissions": [
+        "activeTab",
+        "*://vw-online.hdm-stuttgart.de/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://vw-online.hdm-stuttgart.de/*"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "icons": {
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
